@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrativo</title>
+    <style>
+
+
+.header {
+    background-image: linear-gradient(to right, #ff0000, #e7316e);
+  display: flex;
+  justify-content: space-between;
+
+  background-size: 100% 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.valorPorProduto {
+  width: auto;
+  overflow: hidden;
+  margin: auto;
+  margin: 40px 20px 5px 32px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+ 
+}
+
+.InformacoesGerais {
+  width: auto;
+  overflow: hidden;
+  margin: auto;
+  margin: 40px 20px 5px 32px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+ 
+}
+
+h3, h2 {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  margin: 30px 10px 20px 10px;
+}
+
+.header-periodo {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  margin: 20px 10px 10px -30px;
+}
+
+img {
+  margin: 10px 10px 20px 10px;
+}
+
+.card {
+  width: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: auto;
+  margin: 20px 30px;
+  background-color: #f0f0f0; /* Adicione esta linha */
+  border: 1px solid #b4b4b4;
+  border-top: none;
+}
+
+.name-valor-produto{
+    color: black;
+}
+.card-valorPorProduto {
+  width: auto;
+  overflow: hidden;
+  margin: auto;
+  margin: 20px 30px;
+}
+
+.card-header-valorPorProduto {
+  background-color: whitesmoke;
+  padding: 5px;
+  text-align: left;
+  height: 50px;
+  
+}
+
+.color-td{
+    background-color: whitesmoke;
+}
+
+.card-header {
+  background-color: #f0f0f0;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  border-top: 1px solid #b4b4b4;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+}
+
+.card-header h2 {
+  color: #000;
+}
+
+.card-header h2 {
+  margin: 0;
+}
+
+.card-body {
+  padding: 0px;
+  padding-top: 0px;
+}
+
+.tr-body {
+  padding: 3px;
+  padding-top: 20px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+  margin-top: 0px;
+  border-spacing: 10px;
+  padding: 5px;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.tr-header {
+  height: 30px;
+}
+
+.td-header{
+    padding-top:10px;
+     padding-bottom:10px;
+     color:#747373;
+     margin-top: 10px;   
+}
+
+.td-border-none{
+    border-top: none;
+}
+
+td {
+  background-color: #fff;
+  border-top: 1px solid #b4b4b4;
+  padding: 2px;
+  width: 20%; 
+  word-wrap: break-word; 
+  
+  
+}
+
+.infoCliente {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 30px -30px 30px;
+ 
+}
+
+.infoCliente-complemento {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 20px -30px 34px;
+ 
+}
+
+
+.empresa {
+  margin: 20px 15px 20px 5px;
+  border: 1px solid #acacac;
+  width: 120%;
+  border-radius: 10px;
+}
+
+.cnpj {
+  margin: 20px 15px 20px 0px;
+  border: 1px solid #acacac;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.agencia {
+  margin: 20px 15px 20px 0px;
+  border: 1px solid #acacac;
+  width: 20%;
+  border-radius: 10px;
+}
+
+
+.conta {
+  margin: 20px 5px 20px 0px;
+  border: 1px solid #acacac;
+  width: 30%;
+  border-radius: 10px;
+}
+
+
+.especialista {
+  margin: 20px 15px 20px 5px;
+  border: 1px solid #acacac;
+  width: 120%;
+  border-radius: 10px;
+}
+
+
+.perfil {
+  margin: 20px 15px 20px 0px;
+  border: 1px solid #acacac;
+  width: 50%;
+  border-radius: 10px;
+}
+
+
+.clienteDesde {
+    margin: 20px 15px 20px 0px;
+  border: 1px solid #acacac;
+  width: 30%;
+  border-radius: 10px;
+}
+
+
+.tipoConta {
+    margin: 20px 15px 20px 0px;
+  border: 1px solid #acacac;
+  width: 30%;
+  border-radius: 10px;
+}
+
+
+
+p{
+    margin: 10px 5px 10px 10px;
+}
+
+legenda-text{
+    margin: 15px 29px 20px 20px;
+}
+
+.card-legenda {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 30px -30px 30px;
+ 
+}
+
+.legenda-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 10px -5px 30px;
+ 
+}
+
+.legenda {
+  margin: 2px 0px 20px 0px;
+  width: 55%;
+}
+
+ol {
+    list-style-type: none; 
+    text-align: left;
+    margin: 5px 40px -10px -40px;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="row">
+          <h2 class="header-periodo">Demostrativo de Remuneração do Distribuidor</h1>
+          <p class="header-periodo">Periodo do Relátorio : 01/02/2023 a 05/04/2023</p>
+            <br>
+        </div>
+        <img src="logo.png" alt="Titulo">
+      </div>
+      
+    <main>
+        <div class="infoCliente">
+            <div class="empresa">
+               <p >Empresa</p>
+               <p class="negrito">Sodia Industria Alimentos S/A</p>
+            </div>
+            <div class="cnpj">
+                <p>CNPJ</p>
+                <p class="negrito">007.157.120./0001.46</p>
+            </div>
+            <div class="agencia">
+                <p>Agencia</p>
+                <p class="negrito">3877</p>
+            </div >
+            <div class="conta">
+                <p>Conta</p>
+                <p class="negrito">042305-0</p>
+            </div>
+          </div>
+          <div class="infoCliente-complemento">
+            <div class="tipoConta">
+               <p>Tipo da Conta</p>
+               <p class="negrito">Corrente</p>
+            </div>
+            <div class="clienteDesde">
+                <p>Cliente desde</p>
+                <p class="negrito">20/15/2015</p>
+            </div>
+            <div class="perfil">
+                <p>Perfil</p>
+                <p class="negrito">Arrojado</p>
+            </div >
+
+            <div class="especialista">
+                <p>Especialista</p>
+                <p class="negrito">Alirio Sampaio da Silva Santos Pereira</p>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="card-valorPorProduto">
+            <div class="card-header-valorPorProduto">
+              <h2 class="name-valor-produto">Valor por produto</h2>
+            </div>
+            <div class="card-body">
+                <table>
+                    <tbody>
+                      <tr class="tr-header color-tr">
+                        <td class="td-header td-border-none color-td">
+                            <p>Renda Fixa</p>
+                        </td>
+                        <td class="td-header td-border-none color-td">
+                            <p> COE</p>
+                        </td>
+                        <td class="td-header td-border-none color-td">
+                            <p>Fundos</p>
+                        </td>
+                        <td class="td-header td-border-none color-td">
+                            <p>Renda variável</p>
+                        </td>
+                        <td class="td-header td-border-none color-td">
+                            <p>Derivativos</p>
+                        </td>
+                        <td class="td-header td-border-none  color-td">
+                            <p>Total</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td-border-none color-td negrito">
+                            <p>R$ 300,00</p>
+                        </td>
+                        <td class="td-border-none color-td negrito">
+                            <p>R$ 400,00</p>
+                        </td>
+                        <td class="td-border-none color-td negrito" >
+                            <p>R$ 660,00</p>
+                        </td>
+                        <td class="td-border-none color-td negrito" >
+                            <p>R$ 390,00</p>
+                        </td>
+                        <td class="td-border-none color-td negrito" >
+                            <p>R$ 430,00</p>
+                        </td>
+                        <td  class="td-border-none color-td negrito">
+                            <p>R$ 2.330,00</p>
+                        </td>
+                      </tr>  
+                    </tbody>   
+                  </table>    
+            </div>
+          </div>
+          <div class="InformacoesGerais">INFORMAÇÔES GERAIS DOS PRODUTOS</div>
+        <div class="card">
+            <div class="card-header">
+              <h2>Renda Fixa</h2>
+            </div>
+            <div class="card-body">
+                  <table>
+                    <tbody>
+                      <tr class="tr-header">
+                        <td class="td-header">
+                            <p>Nome</p>
+                        </td>
+                        <td class="td-header">
+                            <p> Tipo Operação</p>
+                        </td>
+                        <td class="td-header">
+                            <p>Valor Financeiro</p>
+                        </td>
+                        <td class="td-header">
+                            <p>Remuneração</p>
+                        </td>
+                        <td class="td-header">
+                            <p>Natureza da Remuneração</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td >
+                            <p class="negrito">LIG PRE 5 ANOS juros Mensais</p>
+                        </td>
+                        <td >
+                            <p class="negrito">Compra</p>
+                        </td>
+                        <td >
+                            <p class="negrito">R$ 50</p>
+                        </td>
+                        <td >
+                            <p class="negrito">R$100,00</p>
+                        </td>
+                        <td >
+                            <p class="negrito">5</p>
+                        </td>
+                      </tr>  
+                      <tr>
+                        <td >
+                            <p class="negrito">LCA PRE 9 MESES</p>
+                        </td>
+                        <td >
+                            <p class="negrito">Compra</p>
+                        </td>
+                        <td >
+                            <p class="negrito">R$ 90</p>
+                        </td>
+                        <td >
+                            <p class="negrito">R$200,00</p>
+                        </td>
+                        <td >
+                            <p class="negrito">5</p>
+                        </td>
+                      </tr>  
+                    </tbody>   
+                  </table>    
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h2>COE</h2>
+            </div>
+            <div class="card-body">
+                  <table>
+                    <tbody>
+                      <tr class="tr-header">
+                        <td class="td-header">
+                            <p>Nome</p>
+                        </td>
+                        <td class="td-header">
+                            <p> Tipo Operação</p>
+                        </td>
+                        <td class="td-header">
+                            <p>Valor Financeiro</p>
+                        </td>
+                        <td class="td-header">
+                            <p>Remuneração</p>
+                        </td>
+                        <td class="td-header">
+                            <p>Natureza da Remuneração</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td >
+                            <p class="negrito">COE IPCA PLUS</p>
+                        </td>
+                        <td >
+                            <p class="negrito">Compra</p>
+                        </td>
+                        <td >
+                            <p class="negrito">R$ 350</p>
+                        </td>
+                        <td >
+                            <p class="negrito">R$400,00</p>
+                        </td>
+                        <td >
+                            <p class="negrito">5</p>
+                        </td>
+                      </tr>  
+                    </tbody>   
+                  </table>    
+            </div>
+        </div>
+        <div class="legenda-text negrito">
+            Legenda - natureza da remuneração
+        </div>
+          <div class="card-legenda">
+            <div class="legenda">
+                <ol>
+                    <li>1.Taxa diretamente cobradas</li>
+                    <li>2.Percentual da taxa de administração</li>
+                    <li>3.Percentual de taxa de performance</li>
+                    <li>4.Spread - diferença entre o cuso de aquisição e de venda</li>
+                </ol>   
+            </div>
+            <div class="legenda">
+                <ol>
+                    <li>5.Taxas de distribuição</li>
+                    <li>6.Taxas relacionadas a conversão de recursos em moeda entrangeira em nacional e vice-versa</li>
+                    <li>7.Percentual do volume de ordens direcionadas a outros intermediarios</li>
+                    <li>8.Percentuak de volume de ordens direcionadas a ambientes de negociação especificos</li>
+                </ol>   
+            </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
