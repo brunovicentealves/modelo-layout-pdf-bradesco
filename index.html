@@ -5,282 +5,286 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demonstrativo</title>
     <style>
+        .header {
+          height: 100px;
+          background-image: linear-gradient(to right, #d10b0b, #ff0055);
+            overflow: hidden;
+          
+        }
+
+        .header-logo {
+            float: right;
+            width: 200px;
+            margin-top: -80px;
+            margin-right: 25px;
+
+        }
+
+        .header-periodo {
+          width: 70%;
+          float: left;
+          font-family: Arial, sans-serif;
+          color: #ffffff;
+          margin: 15px 10px 10px 35px;
+        }
+
+        .valorPorProduto {
+          width: auto;
+          overflow: hidden;
+          margin: auto;
+          margin: 40px 20px 5px 32px;
+          font-weight: bold;
+          font-size: 24px;
+          font-family: Arial, sans-serif;
+        
+        }
+
+        .InformacoesGerais {
+          width: auto;
+          overflow: hidden;
+          margin: auto;
+          margin: 40px 20px 5px 32px;
+          font-weight: bold;
+          font-size: 24px;
+          font-family: Arial, sans-serif;
+        
+        }
+
+        h3, h2 {
+          font-family: Arial, sans-serif;
+          color: #ffffff;
+          margin: 20px 10px 20px 10px;
+        }
+
+        img {
+          margin: 10px 10px 20px 390px;
+        }
+
+        .card {
+          width: auto;
+          border-radius: 5px;
+          overflow: hidden;
+          margin: auto;
+          margin: 20px 30px;
+          background-color: #f0f0f0; /* Adicione esta linha */
+          border: 1px solid #b4b4b4;
+          border-top: none;
+        }
+
+        .name-valor-produto{
+            color: black;
+        }
+        .card-valorPorProduto {
+          width: auto;
+          overflow: hidden;
+          margin: auto;
+          margin: 20px 30px;
+        }
+
+        .card-header-valorPorProduto {
+          background-color: whitesmoke;
+          padding: 5px;
+          text-align: left;
+          height: 50px;
+          
+        }
+
+        .color-td{
+            background-color: whitesmoke;
+        }
+
+        .card-header {
+          background-color: #f0f0f0;
+          color: #fff;
+          padding: 10px;
+          text-align: left;
+          border-top: 1px solid #b4b4b4;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          
+        }
+
+        .card-header h2 {
+          color: #000;
+        }
+
+        .card-header h2 {
+          margin: 0;
+        }
+
+        .card-body {
+          padding: 0px;
+          padding-top: 0px;
+        }
+
+        .tr-body {
+          padding: 3px;
+          padding-top: 20px;
+        }
 
 
-.header {
-    background-image: linear-gradient(to right, #ff0000, #e7316e);
-  display: flex;
-  justify-content: space-between;
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          table-layout: fixed; 
+          margin-top: 0px;
+          border-spacing: 10px;
+          padding: 5px;
+        }
 
-  background-size: 100% 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.valorPorProduto {
-  width: auto;
-  overflow: hidden;
-  margin: auto;
-  margin: 40px 20px 5px 32px;
-  font-weight: bold;
-  font-size: 24px;
-  font-family: Arial, sans-serif;
- 
-}
+        .negrito{
+            font-weight: bold;
+        }
 
-.InformacoesGerais {
-  width: auto;
-  overflow: hidden;
-  margin: auto;
-  margin: 40px 20px 5px 32px;
-  font-weight: bold;
-  font-size: 24px;
-  font-family: Arial, sans-serif;
- 
-}
+        .tr-header {
+          height: 30px;
+        }
 
-h3, h2 {
-  font-family: Arial, sans-serif;
-  color: #ffffff;
-  margin: 30px 10px 20px 10px;
-}
+        .td-header{
+            padding-top:10px;
+            padding-bottom:10px;
+            color:#747373;
+            margin-top: 10px;   
+        }
 
-.header-periodo {
-  font-family: Arial, sans-serif;
-  color: #ffffff;
-  margin: 20px 10px 10px -30px;
-}
+        .td-border-none{
+            border-top: none;
+        }
 
-img {
-  margin: 10px 10px 20px 10px;
-}
+        td {
+          background-color: #fff;
+          border-top: 1px solid #b4b4b4;
+          padding: 2px;
+          width: 20%; 
+          word-wrap: break-word; 
+        }
 
-.card {
-  width: auto;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: auto;
-  margin: 20px 30px;
-  background-color: #f0f0f0; /* Adicione esta linha */
-  border: 1px solid #b4b4b4;
-  border-top: none;
-}
+        .infoCliente {
+          display: flex;
+          justify-content: space-between;
+          margin: 5px 30px -30px 30px;
+        
+        }
 
-.name-valor-produto{
-    color: black;
-}
-.card-valorPorProduto {
-  width: auto;
-  overflow: hidden;
-  margin: auto;
-  margin: 20px 30px;
-}
-
-.card-header-valorPorProduto {
-  background-color: whitesmoke;
-  padding: 5px;
-  text-align: left;
-  height: 50px;
-  
-}
-
-.color-td{
-    background-color: whitesmoke;
-}
-
-.card-header {
-  background-color: #f0f0f0;
-  color: #fff;
-  padding: 10px;
-  text-align: left;
-  border-top: 1px solid #b4b4b4;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  
-}
-
-.card-header h2 {
-  color: #000;
-}
-
-.card-header h2 {
-  margin: 0;
-}
-
-.card-body {
-  padding: 0px;
-  padding-top: 0px;
-}
-
-.tr-body {
-  padding: 3px;
-  padding-top: 20px;
-}
+        .infoCliente-complemento {
+          display: flex;
+          justify-content: space-between;
+          margin: 5px 20px -30px 34px;
+        
+        }
 
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed; 
-  margin-top: 0px;
-  border-spacing: 10px;
-  padding: 5px;
-}
+        .empresa {
+          margin: 20px 15px 20px 5px;
+          border: 1px solid #acacac;
+          width: 120%;
+          border-radius: 10px;
+        }
 
-.negrito{
-    font-weight: bold;
-}
+        .cnpj {
+          margin: 20px 15px 20px 0px;
+          border: 1px solid #acacac;
+          width: 50%;
+          border-radius: 10px;
+        }
 
-.tr-header {
-  height: 30px;
-}
-
-.td-header{
-    padding-top:10px;
-     padding-bottom:10px;
-     color:#747373;
-     margin-top: 10px;   
-}
-
-.td-border-none{
-    border-top: none;
-}
-
-td {
-  background-color: #fff;
-  border-top: 1px solid #b4b4b4;
-  padding: 2px;
-  width: 20%; 
-  word-wrap: break-word; 
-  
-  
-}
-
-.infoCliente {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 30px -30px 30px;
- 
-}
-
-.infoCliente-complemento {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 20px -30px 34px;
- 
-}
+        .agencia {
+          margin: 20px 15px 20px 0px;
+          border: 1px solid #acacac;
+          width: 20%;
+          border-radius: 10px;
+        }
 
 
-.empresa {
-  margin: 20px 15px 20px 5px;
-  border: 1px solid #acacac;
-  width: 120%;
-  border-radius: 10px;
-}
-
-.cnpj {
-  margin: 20px 15px 20px 0px;
-  border: 1px solid #acacac;
-  width: 50%;
-  border-radius: 10px;
-}
-
-.agencia {
-  margin: 20px 15px 20px 0px;
-  border: 1px solid #acacac;
-  width: 20%;
-  border-radius: 10px;
-}
+        .conta {
+          margin: 20px 5px 20px 0px;
+          border: 1px solid #acacac;
+          width: 30%;
+          border-radius: 10px;
+        }
 
 
-.conta {
-  margin: 20px 5px 20px 0px;
-  border: 1px solid #acacac;
-  width: 30%;
-  border-radius: 10px;
-}
+        .especialista {
+          margin: 20px 15px 20px 5px;
+          border: 1px solid #acacac;
+          width: 120%;
+          border-radius: 10px;
+        }
 
 
-.especialista {
-  margin: 20px 15px 20px 5px;
-  border: 1px solid #acacac;
-  width: 120%;
-  border-radius: 10px;
-}
+        .perfil {
+          margin: 20px 15px 20px 0px;
+          border: 1px solid #acacac;
+          width: 50%;
+          border-radius: 10px;
+        }
 
 
-.perfil {
-  margin: 20px 15px 20px 0px;
-  border: 1px solid #acacac;
-  width: 50%;
-  border-radius: 10px;
-}
+        .clienteDesde {
+            margin: 20px 15px 20px 0px;
+          border: 1px solid #acacac;
+          width: 30%;
+          border-radius: 10px;
+        }
 
 
-.clienteDesde {
-    margin: 20px 15px 20px 0px;
-  border: 1px solid #acacac;
-  width: 30%;
-  border-radius: 10px;
-}
+        .tipoConta {
+            margin: 20px 15px 20px 0px;
+          border: 1px solid #acacac;
+          width: 30%;
+          border-radius: 10px;
+        }
 
+        p{
+            margin: 10px 5px 10px 10px;
+        }
 
-.tipoConta {
-    margin: 20px 15px 20px 0px;
-  border: 1px solid #acacac;
-  width: 30%;
-  border-radius: 10px;
-}
+        legenda-text{
+            margin: 15px 29px 20px 20px;
+        }
 
+        .card-legenda {
+          display: flex;
+          justify-content: space-between;
+          margin: 2px 30px -30px 30px;
+        
+        }
 
+        .legenda-text {
+          display: flex;
+          justify-content: space-between;
+          margin: 2px 10px -5px 30px; 
+        }
 
-p{
-    margin: 10px 5px 10px 10px;
-}
+        .legenda {
+          margin: 2px 0px 20px 0px;
+          width: 55%;
+        }
 
-legenda-text{
-    margin: 15px 29px 20px 20px;
-}
+        ol {
+            list-style-type: none; 
+            text-align: left;
+            margin: 5px -10px -10px -40px;
+        }
 
-.card-legenda {
-  display: flex;
-  justify-content: space-between;
-  margin: 2px 30px -30px 30px;
- 
-}
-
-.legenda-text {
-  display: flex;
-  justify-content: space-between;
-  margin: 2px 10px -5px 30px;
- 
-}
-
-.legenda {
-  margin: 2px 0px 20px 0px;
-  width: 55%;
-}
-
-ol {
-    list-style-type: none; 
-    text-align: left;
-    margin: 5px 40px -10px -40px;
-}
-
-
-    </style>
+        .linha{
+          margin: 30px;
+          margin-top: 40px;
+          background-image: linear-gradient(to right, #d10b0b, #ff0055);
+          width: 95%;
+          height: 3px;
+        }
+</style>
 </head>
 <body>
     
-    <div class="header">
-        <div class="row">
-          <h2 class="header-periodo">Demostrativo de Remuneração do Distribuidor</h1>
-          <p class="header-periodo">Periodo do Relátorio : 01/02/2023 a 05/04/2023</p>
-            <br>
-        </div>
-        <img src="logo.png" alt="Titulo">
-      </div>
+  <header class="header">
+    <h3 class="header-periodo">Demonstrativo de Remuneração do Distribuidor</h3>
+    <p class="header-periodo">Periosdo do relatorio 01/01/2023 a 20/01/2023</p>
+    <img src="logo.png" alt="Titulo" class="header-logo">
+</header>
+   
+     
       
     <main>
         <div class="infoCliente">
@@ -481,28 +485,31 @@ ol {
                   </table>    
             </div>
         </div>
+        <br>
+        <br>
         <div class="legenda-text negrito">
             Legenda - natureza da remuneração
         </div>
           <div class="card-legenda">
             <div class="legenda">
                 <ol>
-                    <li>1.Taxa diretamente cobradas</li>
-                    <li>2.Percentual da taxa de administração</li>
-                    <li>3.Percentual de taxa de performance</li>
-                    <li>4.Spread - diferença entre o cuso de aquisição e de venda</li>
+                    <li><strong>1.</strong>Taxa diretamente cobradas</li>
+                    <li><strong>2.</strong>Percentual da taxa de administração</li>
+                    <li><strong>3.</strong>Percentual de taxa de performance</li>
+                    <li><strong>4.</strong>Spread - diferença entre o cuso de aquisição e de venda</li>
                 </ol>   
             </div>
             <div class="legenda">
                 <ol>
-                    <li>5.Taxas de distribuição</li>
-                    <li>6.Taxas relacionadas a conversão de recursos em moeda entrangeira em nacional e vice-versa</li>
-                    <li>7.Percentual do volume de ordens direcionadas a outros intermediarios</li>
-                    <li>8.Percentuak de volume de ordens direcionadas a ambientes de negociação especificos</li>
+                    <li><strong>5.</strong>Taxas de distribuição</li>
+                    <li><strong>6.</strong>Taxas relacionadas a conversão de recursos em moeda entrangeira em nacional e vice-versa</li>
+                    <li><strong>7.</strong>Percentual do volume de ordens direcionadas a outros intermediarios</li>
+                    <li><strong>8.</strong>Percentuak de volume de ordens direcionadas a ambientes de negociação especificos</li>
                 </ol>   
             </div>
             </div>
         </div>
+        <div class="linha"></div>
     </main>
 </body>
 </html>
